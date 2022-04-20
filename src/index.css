@@ -20,6 +20,7 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -120,7 +121,8 @@ body {
 .panelTitles span:nth-child(2) {
     font-size: 22px;
     color: #725C5C;
-    padding-top: 2px;
+    margin-bottom: 2px;
+
 }
 
 .buttonAndProfile {
@@ -213,4 +215,116 @@ body {
     position: relative;
     bottom: 38px;
     left: 19px;
+}
+
+.videoContent {
+    margin-left: 220px;
+
+}
+
+.videoFirstTable {
+    width: 786px;
+    gap: 19px;
+    user-select: none;
+}
+
+.videoFirstTable span{
+    color: #ED7839;
+    font-weight: 900;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+}
+
+.videoArea {
+    width: 783px;
+    height: 439px;
+    background-image:
+        linear-gradient(rgba(141, 53, 6, 0.5), rgba(141, 53, 6, 0.5)), 
+        url('../img/dewey\ 1.png');
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.videoTitle {
+    font-size: 24px;
+    width: 734px;
+    margin-left: 31px;
+}
+
+.videoTitle span {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+}
+
+.authorInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 17px;
+    margin-left: 31px;
+}
+
+.authorImage {
+    width: 84px;
+    height: 86px;
+    border: 1px solid #ED7839;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgRadius {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.authorImage img {
+    width: 74.85px;
+    height: 77.49px;
+    object-fit: cover;
+}
+
+.aboutAuthor {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.aboutAuthor span:nth-child(1) {
+    font-size: 36px;
+    color: #FFFFFF;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    font-weight: 900;
+}
+
+.aboutAuthor span:nth-child(2) {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.doiButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.doiButtons button {
+    background-color: #ED7839;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 6px 12px 6px 12px;
+    cursor: pointer;
+    width: fit-content;
+    height: 31px;
 }
