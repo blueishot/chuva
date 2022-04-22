@@ -219,7 +219,11 @@ body {
 
 .videoContent {
     margin-left: 220px;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 30px;
 }
 
 .videoFirstTable {
@@ -317,6 +321,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 5px;
+    user-select: none;
 }
 
 .doiButtons button {
@@ -327,4 +332,81 @@ body {
     cursor: pointer;
     width: fit-content;
     height: 31px;
+}
+
+.doiButtons button:hover {
+    background-color: #f08e59;
+}
+
+.reference span {
+    font-size: 14px;
+    line-height: 25px;
+    color: #ED7839;
+    user-select: none;
+    font-weight: bold;
+}
+
+.details {
+    user-select: none;
+    width: 242px;
+    height: 45px;
+}
+
+.detailsTitle {
+    background-color: #ECECEC;
+    display: flex;
+    align-items: center;
+}
+
+.detailsTitle span{
+    color: #4E4E4E;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 11px 15px 9px 15px;
+}
+
+.detailsInfo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    line-height: 120%;
+    color: #5C5C5C;
+    padding: 15px;
+    border: 1px solid #ECECEC;
+    height: 364px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    gap: 30px;
+}
+
+.detailsInfo1, .detailsInfo2, .detailsInfo3 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detailsInfo2 {
+    font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #E7E7E7;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #BFBFBF;
+    border-radius: 30px;
+}
+
+.videoInfoContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 242px;
+    gap: 6px;
 }
